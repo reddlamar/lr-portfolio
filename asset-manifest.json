@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/lr-portfolio/static/css/main.641b96a6.css",
+    "main.js": "/lr-portfolio/static/js/main.0add7f4e.js",
+    "static/js/787.917bf49e.chunk.js": "/lr-portfolio/static/js/787.917bf49e.chunk.js",
+    "static/media/color-sharp.png": "/lr-portfolio/static/media/color-sharp.bea361cfef80fefc2d1e.png",
+    "static/media/lamar.jpg": "/lr-portfolio/static/media/lamar.ea28a26a5ea65bc42ff0.jpg",
+    "static/media/git-logo.png": "/lr-portfolio/static/media/git-logo.7a3e94d63a90535ee70e.png",
+    "static/media/CentraNo2-Bold.ttf": "/lr-portfolio/static/media/CentraNo2-Bold.2faff7f7d3fc92a2fcd9.ttf",
+    "static/media/CentraNo2-Medium.ttf": "/lr-portfolio/static/media/CentraNo2-Medium.f94be5b326d78bb32b95.ttf",
+    "static/media/CentraNo2-Book.ttf": "/lr-portfolio/static/media/CentraNo2-Book.2b143fa4b734a3584043.ttf",
+    "static/media/footer-bg.png": "/lr-portfolio/static/media/footer-bg.7bd67c0f73571d0acc02.png",
+    "static/media/html5-logo.png": "/lr-portfolio/static/media/html5-logo.323dab0ccafeb98fae45.png",
+    "static/media/css3-logo.png": "/lr-portfolio/static/media/css3-logo.52a4eb4b9bed78edb97a.png",
+    "static/media/tailwind-css-logo.jpg": "/lr-portfolio/static/media/tailwind-css-logo.ae61e13fbdf5717caa42.jpg",
+    "static/media/RC_logo.jpg": "/lr-portfolio/static/media/RC_logo.3faf337ce2e20b486d6a.jpg",
+    "static/media/reactlogo.webp": "/lr-portfolio/static/media/reactlogo.374376c9d5ca3b870196.webp",
+    "static/media/revicons.eot": "/lr-portfolio/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/lr-portfolio/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/revicons.woff": "/lr-portfolio/static/media/revicons.e8746a624ed098489406.woff",
+    "static/media/github.svg": "/lr-portfolio/static/media/github.e12580dd6e1387fa5539a71ec29853b2.svg",
+    "index.html": "/lr-portfolio/index.html",
+    "static/media/nav-icon1.svg": "/lr-portfolio/static/media/nav-icon1.dff40ae802524d8fc0cbce3f312abe4f.svg",
+    "static/media/twitter-logo.svg": "/lr-portfolio/static/media/twitter-logo.5ad7666d04b3c92604fa05e88ffa1906.svg",
+    "main.641b96a6.css.map": "/lr-portfolio/static/css/main.641b96a6.css.map",
+    "main.0add7f4e.js.map": "/lr-portfolio/static/js/main.0add7f4e.js.map",
+    "787.917bf49e.chunk.js.map": "/lr-portfolio/static/js/787.917bf49e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.641b96a6.css",
+    "static/js/main.0add7f4e.js"
+  ]
+}
