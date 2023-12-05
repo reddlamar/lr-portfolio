@@ -1,80 +1,72 @@
-import { useState, useEffect } from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import headerImg from "../assets/img/header-img.svg";
-import { ArrowRightCircle } from 'react-bootstrap-icons';
+import { Container, Row, Col } from 'react-bootstrap';
+import headerImg from '../assets/img/lamar.jpg';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
 export const Banner = () => {
-  const [loopNum, setLoopNum] = useState(0);
-  const [isDeleting, setIsDeleting] = useState(false);
-  const [text, setText] = useState('');
-  const [delta, setDelta] = useState(300 - Math.random() * 100);
-  const [index, setIndex] = useState(1);
-  const toRotate = [ "Web Developer", "Web Designer", "Team Leader" ];
-  const period = 2000;
-
-  useEffect(() => {
-    let ticker = setInterval(() => {
-      tick();
-    }, delta);
-
-    return () => { clearInterval(ticker) };
-  }, [text])
-
-  const tick = () => {
-    let i = loopNum % toRotate.length;
-    let fullText = toRotate[i];
-    let updatedText = isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1);
-
-    setText(updatedText);
-
-    if (isDeleting) {
-      setDelta(prevDelta => prevDelta / 2);
-    }
-
-    if (!isDeleting && updatedText === fullText) {
-      setIsDeleting(true);
-      setIndex(prevIndex => prevIndex - 1);
-      setDelta(period);
-    } else if (isDeleting && updatedText === '') {
-      setIsDeleting(false);
-      setLoopNum(loopNum + 1);
-      setIndex(1);
-      setDelta(500);
-    } else {
-      setIndex(prevIndex => prevIndex + 1);
-    }
-  }
-
-  return (
-    <section className="banner" id="home">
-      <Container>
-        <Row className="aligh-items-center">
-          <Col xs={12} md={6} xl={7}>
-            <TrackVisibility>
-              {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hi! I'm Odina`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "Team Leder" ]'><span className="wrap">{text}</span></span></h1>
-                <p>My fullname is Saidnazarova Odinanabonu. I'm 15 years old. I study 249-school in 10th grade.I am a front-end web developer. I can make the website more, more interactive with web animation
-           I study at Web Brain Academy group G5. When I first came to web brain, I had no knowledge of programming.
-           But now with the help of strong aspirations and teachers, my level of knowledge has greatly increased and I can freely create web site views that are used in our daily lives
-        </p>
-                  <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
-              </div>}
-            </TrackVisibility>
-          </Col>
-          <Col xs={12} md={6} xl={5}>
-            <TrackVisibility>
-              {({ isVisible }) =>
-                <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                  <img src={headerImg} alt="Header Img"/>
-                </div>}
-            </TrackVisibility>
-          </Col>
-        </Row>
-      </Container>
-    </section>
-  )
-}
+	return (
+		<section className='banner' id='home'>
+			<Container>
+				<Row className='aligh-items-center'>
+					<Col xs={12} md={6} xl={7}>
+						<TrackVisibility>
+							<div>
+								<span className='tagline'>Welcome to my Portfolio</span>
+								<h2>{`Hi, My name is Lamar Redd`}</h2>
+								<p class='about-wrapper__info-text'>
+									I have 10 years of on-the-job coding experience. The last two
+									years have been transformative where my coding skills and
+									performance have been put to the test, proven, and honed.
+									Advanced front-end developer with intermediate back-end
+									experience, ready for the next web-based challenge.
+								</p>
+								<div class='about-wrapper__info-text fs-3'>
+									<p>
+										<span class='fw-bold'>Education:</span> Bachelor of Science
+										degree in Computer Science from California State University
+										Dominguez Hills.
+									</p>
+									<p>
+										<span class='fw-bold'>Location:</span> Based in San Diego,
+										California, with a strong connection to the Sacramento area
+									</p>
+									<p>
+										<span class='fw-bold'>Interests and Hobbies:</span>
+										<ul class='fs-5'>
+											<li>
+												Passionate about continuous learning and improvement in
+												software engineering, I dedicate my free time to reading
+												books that enhance my skills, with Robert C. Martin
+												being one of my favorite authors.
+											</li>
+											<li>
+												As an avid sports enthusiast, I enjoy watching various
+												sports, with basketball being my favorite. I also find
+												enjoyment in participating in fantasy sports leagues for
+												recreational purposes.
+											</li>
+										</ul>
+										By leveraging my extensive experience, education, and
+										passion for software development, I am dedicated to
+										delivering professional, high-quality solutions to meet the
+										demands of the ever-evolving software development landscape.
+									</p>
+								</div>
+								{/* <button onClick={() => console.log('connect')}>
+									Let’s Connect <ArrowRightCircle size={25} />
+								</button> */}
+							</div>
+						</TrackVisibility>
+					</Col>
+					<Col xs={12} md={6} xl={5}>
+						<TrackVisibility>
+							<div className={'animate__animated animate__fadeInRight'}>
+								<img src={headerImg} alt='Header Img' />
+							</div>
+						</TrackVisibility>
+					</Col>
+				</Row>
+			</Container>
+		</section>
+	);
+};
