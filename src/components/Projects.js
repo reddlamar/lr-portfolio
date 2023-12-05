@@ -3,6 +3,7 @@ import { ProjectCard } from './ProjectCard';
 import faceDetectApp from '../assets/img/face-detect-logo.png';
 import rcLogo from '../assets/img/RC_logo.jpg';
 import monstersRolodexApp from '../assets/img/monster-rolodex-logo.png';
+import lrclothinglogo from '../assets/img/lr-clothing-logo.png';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
@@ -22,6 +23,11 @@ export const Projects = () => {
 			description: 'Monsters Rolodex',
 			imgUrl: monstersRolodexApp,
 			appUrl: 'https://reddlamar.github.io/monster-rolodex/',
+		},
+		{
+			description: 'LR Colthing',
+			imgUrl: lrclothinglogo,
+			appUrl: 'https://courageous-strudel-ecd3ae.netlify.app/',
 		},
 	];
 
