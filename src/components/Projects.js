@@ -39,10 +39,7 @@ export const Projects = () => {
 						<TrackVisibility>
 							<div id='projects'>
 								<h2>Projects</h2>
-								<p>
-									I show you to all the big and small websites I have done so
-									far
-								</p>
+								<p>Below are the projects I have developed</p>
 								<Tab.Container id='projects-tabs' defaultActiveKey='first'>
 									<Nav
 										variant='pills'
